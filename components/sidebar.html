@@ -1,0 +1,58 @@
+<ul class="sidebar">
+  <li class="sidebar_box">
+    <a href="/" class="sidebar_title"
+      ><img src="../assets/home.svg" alt="home icon" /> Main</a
+    >
+  </li>
+
+  <li class="sidebar_box">
+    <a href="/exports.html" class="sidebar_title"
+      ><img src="../assets/dashboard-icon.svg" alt="dashboard icon" />
+      Dashboard</a
+    >
+  </li>
+  <li class="sidebar_box">
+    <a href="/generatedata.html" class="sidebar_title"
+      ><img src="../assets/master-icons.svg" alt="master icon" /> Masters</a
+    >
+  </li>
+  <li class="sidebar_box">
+    <p onclick="showDashboard()">
+      <img src="../assets/transaction-icons.svg" alt="transaction icons" />
+      Transactions
+    </p>
+    <div id="dashboard">
+      <a href="/sales.html"> Order <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="/production.html">
+        Production <i class="fa-solid fa-chevron-right"></i>
+      </a>
+      <a href="/inventory.html">
+        Inventory <i class="fa-solid fa-chevron-right"></i>
+      </a>
+      <a href="/herohonda/purchaseorder.html">
+        Purchase <i class="fa-solid fa-chevron-right"></i>
+      </a>
+      <a href="/moduleless.html">
+        Commercial <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </li>
+  <li class="sidebar_box">
+    <a href="#" class="sidebar_title">
+      <img src="../assets/report-icon.svg" alt="report icon" />Reports
+    </a>
+  </li>
+</ul>
+
+<script>
+  $(window)
+    .resize(function () {
+      var width = $(window).width();
+      var mobileScreen = 450;
+
+      if (width <= mobileScreen) {
+        $(".admin").hide();
+      }
+    })
+    .resize();
+</script>
